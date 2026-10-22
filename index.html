@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>דוח ניהול סיכונים — למידה מקצועית במתמטיקה OJT</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',Tahoma,sans-serif;line-height:1.6;background:linear-gradient(135deg,#667eea,#764ba2);color:#2c3e50;padding:18px}
+.wrap{max-width:1100px;margin:0 auto;background:rgba(255,255,255,.98);border-radius:18px;box-shadow:0 25px 50px rgba(0,0,0,.2);overflow:hidden}
+.r-nav ul{display:flex;list-style:none;flex-wrap:wrap}
+.r-nav li{flex:1}
+.r-nav a{display:block;padding:12px 6px;color:#bdc3c7;text-decoration:none;text-align:center;font-weight:600;font-size:.78em}
+.r-nav a:hover{background:#2c3e50;color:#fff}
+html{scroll-behavior:smooth}
+@media print{body{background:#fff!important;padding:0}.wrap{box-shadow:none;border-radius:0}}
+</style></head>
+<body><div class="wrap"><div id="reportApp">
+<div style="background:#fff8e1;border:1px solid #f0b429;border-radius:12px;margin:16px 22px;padding:11px 15px;color:#7a5c00;font-size:.78em;line-height:1.55;display:flex;gap:9px;align-items:flex-start">
+  <span style="font-size:1.1em;line-height:1.2">⚠️</span>
+  <div><strong style="color:#9a6a00">הבהרה:</strong> דוח זה נוצר אוטומטית ומתבסס על מסמכי מדיניות ורגולציה המופיעים במקורות. אין לראות בו אישור, אסמכתא או חוות דעת רשמית. הדוח נועד להשראה ולחשבה ראשונית בלבד, ואינו תחליף לייעוץ מקצועי, משפטי או רגולטורי.</div>
+</div>
+    <div style="background:linear-gradient(135deg,#1a3a5c,#2c3e50);color:white;padding:45px 35px;text-align:center">
+      <h1 class="ed" style="font-size:2.4em;margin-bottom:8px;text-shadow:2px 2px 4px rgba(0,0,0,.3)">⚠️ דוח ניהול סיכונים</h1>
+      <div class="ed" style="font-size:1.1em;opacity:.9;margin-bottom:6px">למידה מקצועית במתמטיקה OJT (תשפ"ז) — למידה מקצועית המשולבת ביום העבודה</div>
+      <div class="ed" style="display:inline-block;background:rgba(255,255,255,.2);padding:7px 16px;border-radius:20px;font-size:.85em;margin-top:10px">אחראי: עדי לוי מיכאלי — מנהלת הפרויקט • אוקטובר 2026</div>
+    </div>
+
+    <nav class="r-nav" style="position:sticky;top:0;background:linear-gradient(135deg,#34495e,#2c3e50);z-index:900;box-shadow:0 4px 8px rgba(0,0,0,.2)">
+      <ul style="display:flex;list-style:none;margin:0;padding:0">
+        <li style="flex:1"><a href="#s1" style="display:block;padding:13px 6px;color:#bdc3c7;text-decoration:none;text-align:center;font-weight:600;font-size:.75em;border-left:1px solid #2c3e50" onmouseover="this.style.background='#2c3e50';this.style.color='white'" onmouseout="this.style.background='';this.style.color='#bdc3c7'">📋 פרויקט</a></li><li style="flex:1"><a href="#s2" style="display:block;padding:13px 6px;color:#bdc3c7;text-decoration:none;text-align:center;font-weight:600;font-size:.75em;border-left:1px solid #2c3e50" onmouseover="this.style.background='#2c3e50';this.style.color='white'" onmouseout="this.style.background='';this.style.color='#bdc3c7'">⚠️ סיכונים</a></li><li style="flex:1"><a href="#s3" style="display:block;padding:13px 6px;color:#bdc3c7;text-decoration:none;text-align:center;font-weight:600;font-size:.75em;border-left:1px solid #2c3e50" onmouseover="this.style.background='#2c3e50';this.style.color='white'" onmouseout="this.style.background='';this.style.color='#bdc3c7'">📈 התמודדות</a></li><li style="flex:1"><a href="#s4" style="display:block;padding:13px 6px;color:#bdc3c7;text-decoration:none;text-align:center;font-weight:600;font-size:.75em;border-left:1px solid #2c3e50" onmouseover="this.style.background='#2c3e50';this.style.color='white'" onmouseout="this.style.background='';this.style.color='#bdc3c7'">🚀 אסדרה</a></li><li style="flex:1"><a href="#s5" style="display:block;padding:13px 6px;color:#bdc3c7;text-decoration:none;text-align:center;font-weight:600;font-size:.75em;border-left:1px solid #2c3e50" onmouseover="this.style.background='#2c3e50';this.style.color='white'" onmouseout="this.style.background='';this.style.color='#bdc3c7'">📊 חדשנות</a></li><li style="flex:1"><a href="#s6" style="display:block;padding:13px 6px;color:#bdc3c7;text-decoration:none;text-align:center;font-weight:600;font-size:.75em;border-left:1px solid #2c3e50" onmouseover="this.style.background='#2c3e50';this.style.color='white'" onmouseout="this.style.background='';this.style.color='#bdc3c7'">✅ רגולציה</a></li><li style="flex:1"><a href="#s7" style="display:block;padding:13px 6px;color:#bdc3c7;text-decoration:none;text-align:center;font-weight:600;font-size:.75em;border-left:1px solid #2c3e50" onmouseover="this.style.background='#2c3e50';this.style.color='white'" onmouseout="this.style.background='';this.style.color='#bdc3c7'">📝 סיכום</a></li><li style="flex:1"><a href="#s8" style="display:block;padding:13px 6px;color:#bdc3c7;text-decoration:none;text-align:center;font-weight:600;font-size:.75em;border-left:1px solid #2c3e50" onmouseover="this.style.background='#2c3e50';this.style.color='white'" onmouseout="this.style.background='';this.style.color='#bdc3c7'">📚 מקורות</a></li>
+      </ul>
+    </nav>
+
+    <section id="s1" style="scroll-margin-top:55px">
+      <div  style="background:linear-gradient(135deg,#e74c3c,#c0392b);color:white;padding:20px 35px;font-size:1.6em;font-weight:700;text-align:center" class="ed">📋 הגדרת הפרויקט</div>
+      <div style="padding:28px;background:linear-gradient(135deg,#f8f9fa,#e9ecef)">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px">
+          <div style="background:white;padding:16px;border-radius:12px;box-shadow:0 5px 16px rgba(0,0,0,.07);border-top:4px solid #3498db"><h4 style="color:#2c3e50;margin-bottom:6px;font-size:.92em">👤 <span class="ed">אחראי פרויקט</span></h4><p class="ed" style="color:#34495e;font-size:.88em">עדי לוי מיכאלי — מנהלת הפרויקט; ליווי אסדרה: אסדרת חדשנות, אגף מו"פ</p></div><div style="background:white;padding:16px;border-radius:12px;box-shadow:0 5px 16px rgba(0,0,0,.07);border-top:4px solid #3498db"><h4 style="color:#2c3e50;margin-bottom:6px;font-size:.92em">🏢 <span class="ed">ארגון</span></h4><p class="ed" style="color:#34495e;font-size:.88em">אגף מו"פ; שותפים נדרשים: אגף א' לפיתוח מקצועי, אגף כוח אדם בהוראה, הסתדרות המורים; רכזי מתמטיקה ומנהלים</p></div><div style="background:white;padding:16px;border-radius:12px;box-shadow:0 5px 16px rgba(0,0,0,.07);border-top:4px solid #3498db"><h4 style="color:#2c3e50;margin-bottom:6px;font-size:.92em">🌍 <span class="ed">היקף הפרויקט</span></h4><p class="ed" style="color:#34495e;font-size:.88em">צוותי מתמטיקה בבתי ספר שנבחרו בקול קורא; הכרה מבוקשת בעד 30 שעות למידה; מספר בתי הספר טרם נסגר</p></div><div style="background:white;padding:16px;border-radius:12px;box-shadow:0 5px 16px rgba(0,0,0,.07);border-top:4px solid #3498db"><h4 style="color:#2c3e50;margin-bottom:6px;font-size:.92em">📅 <span class="ed">לוח זמנים</span></h4><p class="ed" style="color:#34495e;font-size:.88em">נקודת הכרעה: סוף נובמבר 2026 ← אלפא מדצמבר 2026 ← מעבר לביתא בפברואר–מרץ 2027</p></div><div style="background:white;padding:16px;border-radius:12px;box-shadow:0 5px 16px rgba(0,0,0,.07);border-top:4px solid #3498db"><h4 style="color:#2c3e50;margin-bottom:6px;font-size:.92em">🚀 <span class="ed">סוג החדשנות</span></h4><p class="ed" style="color:#34495e;font-size:.88em">חדשנות ארגונית-פדגוגית: מחזורי למידה מתוך הפרקטיקה במקום קורס, בשילוב כלי בינה מלאכותית לניתוח עדויות</p></div><div style="background:white;padding:16px;border-radius:12px;box-shadow:0 5px 16px rgba(0,0,0,.07);border-top:4px solid #3498db"><h4 style="color:#2c3e50;margin-bottom:6px;font-size:.92em">📋 <span class="ed">סטטוס רגולטורי</span></h4><p class="ed" style="color:#34495e;font-size:.88em">מומלץ אישור מותנה להתנסות; נדרשת חריגה כתובה מאגף א' לגבי מעמד השעות</p></div>
+        </div>
+      </div>
+      <div style="background:white;margin:18px 28px;padding:20px;border-radius:14px;box-shadow:0 4px 12px rgba(0,0,0,.07)">
+        <h3 class="ed" style="color:#2c3e50;margin-bottom:12px;font-size:1.15em;text-align:center">🎯 מטרות הפרויקט</h3>
+        <div class="ed" style="background:#f8f9fa;margin:8px 0;padding:13px;border-radius:9px;border-right:4px solid #27ae60"><strong>1. למידה מקצועית המשולבת ביום העבודה</strong><br><span style="color:#34495e;font-size:.93em">מחזורי למידה של צוותי מתמטיקה מתוך הפרקטיקה בכיתה: תכנון, התנסות, איסוף עדויות ורפלקציה, בזמן מוגן במערכת.</span></div><div class="ed" style="background:#f8f9fa;margin:8px 0;padding:13px;border-radius:9px;border-right:4px solid #27ae60"><strong>2. הכרה לגמול השתלמות בלמידה מתוך העבודה</strong><br><span style="color:#34495e;font-size:.93em">המלצה להכיר בעד 30 שעות למידה המשולבות ביום העבודה, כחלופה לקורס בעל סילבוס, מרצה וגוף מבצע.</span></div><div class="ed" style="background:#f8f9fa;margin:8px 0;padding:13px;border-radius:9px;border-right:4px solid #27ae60"><strong>3. מודל בר-תיקוף ובר-הרחבה</strong><br><span style="color:#34495e;font-size:.93em">מעבר מאלפא לביתא, עם תיעוד המשמש ראיה, מדדי הצלחה ומעבר הדרגתי להפעלה עצמאית של הצוותים.</span></div>
+      </div>
+      <div style="background:white;margin:18px 28px;padding:20px;border-radius:14px;box-shadow:0 4px 12px rgba(0,0,0,.07)">
+        <h3 class="ed" style="color:#2c3e50;margin-bottom:12px;font-size:1.15em;text-align:center">📋 תוצרים מצופים</h3>
+        <div class="ed" style="background:#f8f9fa;margin:8px 0;padding:13px;border-radius:9px;border-right:4px solid #27ae60"><strong>מודל OJT להוראת מתמטיקה</strong> — <span style="color:#34495e;font-size:.93em">מחזור למידה מוגדר, תפקידי רכז ומנהל, וזמן מוגן במערכת השעות.</span></div><div class="ed" style="background:#f8f9fa;margin:8px 0;padding:13px;border-radius:9px;border-right:4px solid #27ae60"><strong>תבנית תיעוד קצרה</strong> — <span style="color:#34495e;font-size:.93em">תיעוד מחזורי הלמידה, המשמש גם כראיית שעות לצורך הכרה, בתקרת זמן מוגדרת.</span></div><div class="ed" style="background:#f8f9fa;margin:8px 0;padding:13px;border-radius:9px;border-right:4px solid #27ae60"><strong>המלצת אסדרה להכרה בשעות</strong> — <span style="color:#34495e;font-size:.93em">מתווה הכרה מבוסס ראיות מהאלפא והביתא, להחלטת אגף א'.</span></div>
+      </div>
+    </section>
+
+    <section id="s2" style="scroll-margin-top:55px">
+      <div  style="background:linear-gradient(135deg,#e74c3c,#c0392b);color:white;padding:20px 35px;font-size:1.6em;font-weight:700;text-align:center" class="ed">⚠️ ניהול סיכונים</div>
+      <div style="padding:28px;background:white">
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:22px">
+          <div style="background:linear-gradient(135deg,#f8f9fa,#e9ecef);padding:14px;border-radius:12px;text-align:center;box-shadow:0 5px 16px rgba(0,0,0,.07)"><div class="ed" style="font-size:2.2em;font-weight:700;color:#e74c3c">1</div><div style="font-size:.8em;color:#7f8c8d">גבוהה מאוד</div></div><div style="background:linear-gradient(135deg,#f8f9fa,#e9ecef);padding:14px;border-radius:12px;text-align:center;box-shadow:0 5px 16px rgba(0,0,0,.07)"><div class="ed" style="font-size:2.2em;font-weight:700;color:#f39c12">2</div><div style="font-size:.8em;color:#7f8c8d">גבוהה</div></div><div style="background:linear-gradient(135deg,#f8f9fa,#e9ecef);padding:14px;border-radius:12px;text-align:center;box-shadow:0 5px 16px rgba(0,0,0,.07)"><div class="ed" style="font-size:2.2em;font-weight:700;color:#e8b800">2</div><div style="font-size:.8em;color:#7f8c8d">בינונית</div></div><div style="background:linear-gradient(135deg,#f8f9fa,#e9ecef);padding:14px;border-radius:12px;text-align:center;box-shadow:0 5px 16px rgba(0,0,0,.07)"><div class="ed" style="font-size:2.2em;font-weight:700;color:#27ae60">0</div><div style="font-size:.8em;color:#7f8c8d">נמוכה</div></div>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:18px">
+    <div style="background:white;border-radius:14px;box-shadow:0 8px 25px rgba(0,0,0,.09);padding:22px;border-top:5px solid #e74c3c">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:12px">
+        <div class="ed" style="font-size:1.05em;font-weight:700;color:#2c3e50;flex:1">הכרה לגמול בלמידה המתקיימת בשעות שהייה</div>
+        <div class="ed" style="background:#e74c3c;color:white;padding:4px 12px;border-radius:20px;font-size:.75em;font-weight:700;white-space:nowrap">חומרה גבוהה מאוד</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin:12px 0;text-align:center">
+        <div style="background:#f8f9fa;padding:10px;border-radius:8px"><div class="ed" style="font-size:1.5em;font-weight:700">9</div><div style="font-size:.78em;color:#7f8c8d">הסתברות</div></div>
+        <div style="background:#f8f9fa;padding:10px;border-radius:8px"><div class="ed" style="font-size:1.5em;font-weight:700">9</div><div style="font-size:.78em;color:#7f8c8d">עוצמת נזק</div></div>
+        <div style="background:#f8f9fa;padding:10px;border-radius:8px"><div class="ed" style="font-size:1.5em;font-weight:700">81</div><div style="font-size:.78em;color:#7f8c8d">דרגת חומרה</div></div>
+      </div>
+      <div class="ed" style="background:#f8f9fa;padding:12px;border-radius:8px;border-right:4px solid #bdc3c7;font-size:.93em;color:#34495e;line-height:1.6;margin-top:10px">לפי המקורות שנבדקו, השתלמות מוסדית מוכרת אינה יכולה לבוא על חשבון שעות שהייה. הכרה כזו נוגעת להסכם הקיבוצי ולכן אינה החלטה פדגוגית בלבד (נגזר ממטרה 2: הכרה לגמול השתלמות בלמידה מתוך העבודה).</div>
+      <div class="ed" style="font-size:.8em;color:#555;background:#f0f4ff;padding:6px 11px;border-radius:7px;margin-top:8px;border-right:3px solid #3498db">📌 <strong>מקור:</strong> אופק חדש (הסתדרות המורים) — מבנה שבוע העבודה | נוהל פיתוח מקצועי באופק חדש, אגף א' (2021)</div>
+      <div style="margin-top:12px">
+        <div style="font-weight:700;color:#e74c3c;margin-bottom:5px">השלכות:</div>
+        <ul style="list-style:none;padding-right:10px"><li class="ed" style="padding:5px 0;border-bottom:1px solid #ecf0f1;font-size:.9em">⚠️ אי-הכרה בדיעבד בשעות המורים</li><li class="ed" style="padding:5px 0;border-bottom:1px solid #ecf0f1;font-size:.9em">⚠️ התנגדות ארגון המורים וטענת "כפל תגמול"</li><li class="ed" style="padding:5px 0;border-bottom:1px solid #ecf0f1;font-size:.9em">⚠️ קריסת יעד האסדרה של הפרויקט</li></ul>
+        <div style="font-weight:700;color:#27ae60;margin:10px 0 5px">הזדמנויות:</div>
+        <ul style="list-style:none;padding-right:10px"><li class="ed" style="padding:5px 0;border-bottom:1px solid #ecf0f1;font-size:.9em">✅ הפרדה בין למידת צוות, התנסות בכיתה ורפלקציה, ובחינת הכרה לכל רכיב</li><li class="ed" style="padding:5px 0;border-bottom:1px solid #ecf0f1;font-size:.9em">✅ תקדים להכרה בלמידה מתוך הפרקטיקה</li></ul>
+      </div>
+    </div>
+    <div style="background:white;border-radius:14px;box-shadow:0 8px 25px rgba(0,0,0,.09);padding:22px;border-top:5px solid #f39c12">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:12px">
+        <div class="ed" style="font-size:1.05em;font-weight:700;color:#2c3e50;flex:1">מידע אישי של תלמידים בכלי בינה מלאכותית</div>
+        <div class="ed" style="background:#f39c12;color:white;padding:4px 12px;border-radius:20px;font-size:.75em;font-weight:700;white-space:nowrap">חומרה גבוהה</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin:12px 0;text-align:center">
+        <div style="background:#f8f9fa;padding:10px;border-radius:8px"><div class="ed" style="font-size:1.5em;font-weight:700">7</div><div style="font-size:.78em;color:#7f8c8d">הסתברות</div></div>
+        <div style="background:#f8f9fa;padding:10px;border-radius:8px"><div class="ed" style="font-size:1.5em;font-weight:700">8</div><div style="font-size:.78em;color:#7f8c8d">עוצמת נזק</div></div>
+        <div style="background:#f8f9fa;padding:10px;border-radius:8px"><div class="ed" style="font-size:1.5em;font-weight:700">56</div><div style="font-size:.78em;color:#7f8c8d">דרגת חומרה</div></div>
+      </div>
+      <div class="ed" style="background:#f8f9fa;padding:12px;border-radius:8px;border-right:4px solid #bdc3c7;font-size:.93em;color:#34495e;line-height:1.6;margin-top:10px">מורים מזינים לכלי AI עבודות תלמידים, נתוני למידה ותצפיות, ועלולים להסתמך יתר על המידה על הפלט בניתוח העדויות (נגזר ממטרה 1: למידה מקצועית המשולבת ביום העבודה).</div>
+      <div class="ed" style="font-size:.8em;color:#555;background:#f0f4ff;padding:6px 11px;border-radius:7px;margin-top:8px;border-right:3px solid #3498db">📌 <strong>מקור:</strong> חדשנות אחראית ושימוש בכלי בינה מלאכותית בחינוך | הנחיות שימוש בכלי בינה מלאכותית (ינואר 2026) — כלים מאושרים בלבד</div>
+      <div style="margin-top:12px">
+        <div style="font-weight:700;color:#e74c3c;margin-bottom:5px">השלכות:</div>
+        <ul style="list-style:none;padding-right:10px"><li class="ed" style="padding:5px 0;border-bottom:1px solid #ecf0f1;font-size:.9em">⚠️ פגיעה בפרטיות קטינים והפרת הנחיות המשרד</li><li class="ed" style="padding:5px 0;border-bottom:1px solid #ecf0f1;font-size:.9em">⚠️ מסקנות פדגוגיות שגויות ושחיקת שיקול הדעת</li></ul>
+        <div style="font-weight:700;color:#27ae60;margin:10px 0 5px">הזדמנויות:</div>
+        <ul style="list-style:none;padding-right:10px"><li class="ed" style="padding:5px 0;border-bottom:1px solid #ecf0f1;font-size:.9em">✅ עיקרון "המורה מכריע": כל פלט נבדק בצוות מול העדות המקורית</li></ul>
+      </div>
+    </div>
+    <div style="background:white;border-radius:14px;box-shadow:0 8px 25px rgba(0,0,0,.09);padding:22px;border-top:5px solid #f39c12">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:12px">
+        <div class="ed" style="font-size:1.05em;font-weight:700;color:#2c3e50;flex:1">אי-ודאות בגמול והיעדר אימות ל"שעת למידה"</div>
+        <div class="ed" style="background:#f39c12;color:white;padding:4px 12px;border-radius:20px;font-size:.75em;font-weight:700;white-space:nowrap">חומרה גבוהה</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin:12px 0;text-align:center">
+        <div style="background:#f8f9fa;padding:10px;border-radius:8px"><div class="ed" style="font-size:1.5em;font-weight:700">7</div><div style="font-size:.78em;color:#7f8c8d">הסתברות</div></div>
+        <div style="background:#f8f9fa;padding:10px;border-radius:8px"><div class="ed" style="font-size:1.5em;font-weight:700">7</div><div style="font-size:.78em;color:#7f8c8d">עוצמת נזק</div></div>
+        <div style="background:#f8f9fa;padding:10px;border-radius:8px"><div class="ed" style="font-size:1.5em;font-weight:700">49</div><div style="font-size:.78em;color:#7f8c8d">דרגת חומרה</div></div>
+      </div>
+      <div class="ed" style="background:#f8f9fa;padding:12px;border-radius:8px;border-right:4px solid #bdc3c7;font-size:.93em;color:#34495e;line-height:1.6;margin-top:10px">תנאי ההכרה הקיימים (80% נוכחות, עבודה רפלקטיבית עם ציון, קורס מוכר) נכתבו לקורס. אין הגדרה ל"שעת למידה" במודל ואין מי שמאמת אותה (נגזר ממטרה 2: הכרה לגמול השתלמות בלמידה מתוך העבודה).</div>
+      <div class="ed" style="font-size:.8em;color:#555;background:#f0f4ff;padding:6px 11px;border-radius:7px;margin-top:8px;border-right:3px solid #3498db">📌 <strong>מקור:</strong> נוהל פיתוח מקצועי באופק חדש, אגף א' (2021)</div>
+      <div style="margin-top:12px">
+        <div style="font-weight:700;color:#e74c3c;margin-bottom:5px">השלכות:</div>
+        <ul style="list-style:none;padding-right:10px"><li class="ed" style="padding:5px 0;border-bottom:1px solid #ecf0f1;font-size:.9em">⚠️ אובדן אמון ונשירת צוותים באמצע הפיילוט</li><li class="ed" style="padding:5px 0;border-bottom:1px solid #ecf0f1;font-size:.9em">⚠️ המלצות האסדרה נשארות ללא בסיס ראייתי</li></ul>
+        <div style="font-weight:700;color:#27ae60;margin:10px 0 5px">הזדמנויות:</div>
+        <ul style="list-style:none;padding-right:10px"><li class="ed" style="padding:5px 0;border-bottom:1px solid #ecf0f1;font-size:.9em">✅ תבנית התיעוד כראיית שעות, באימות רכז ומנהל ובקרה מדגמית של מו"פ</li></ul>
+      </div>
+    </div>
+    <div style="background:white;border-radius:14px;box-shadow:0 8px 25px rgba(0,0,0,.09);padding:22px;border-top:5px solid #e8b800">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:12px">
+        <div class="ed" style="font-size:1.05em;font-weight:700;color:#2c3e50;flex:1">שחיקת הזמן המוגן ועומס תיעוד</div>
+        <div class="ed" style="background:#e8b800;color:#2c3e50;padding:4px 12px;border-radius:20px;font-size:.75em;font-weight:700;white-space:nowrap">חומרה בינונית</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin:12px 0;text-align:center">
+        <div style="background:#f8f9fa;padding:10px;border-radius:8px"><div class="ed" style="font-size:1.5em;font-weight:700">7</div><div style="font-size:.78em;color:#7f8c8d">הסתברות</div></div>
+        <div style="background:#f8f9fa;padding:10px;border-radius:8px"><div class="ed" style="font-size:1.5em;font-weight:700">6</div><div style="font-size:.78em;color:#7f8c8d">עוצמת נזק</div></div>
+        <div style="background:#f8f9fa;padding:10px;border-radius:8px"><div class="ed" style="font-size:1.5em;font-weight:700">42</div><div style="font-size:.78em;color:#7f8c8d">דרגת חומרה</div></div>
+      </div>
+      <div class="ed" style="background:#f8f9fa;padding:12px;border-radius:8px;border-right:4px solid #bdc3c7;font-size:.93em;color:#34495e;line-height:1.6;margin-top:10px">הזמן המוגן נשחק מול מילוי מקום, בחינות ואירועי בית הספר, והתיעוד עלול להפוך לנטל בירוקרטי (נגזר ממטרה 1: למידה מקצועית המשולבת ביום העבודה).</div>
+      <div class="ed" style="font-size:.8em;color:#555;background:#f0f4ff;padding:6px 11px;border-radius:7px;margin-top:8px;border-right:3px solid #3498db">📌 <strong>מקור:</strong> אופק חדש — עד 4 מתוך 9 שעות שהייה לישיבות צוות מקצועי בחטיבת הביניים</div>
+      <div style="margin-top:12px">
+        <div style="font-weight:700;color:#e74c3c;margin-bottom:5px">השלכות:</div>
+        <ul style="list-style:none;padding-right:10px"><li class="ed" style="padding:5px 0;border-bottom:1px solid #ecf0f1;font-size:.9em">⚠️ מחזורי למידה קטועים ועדויות דלות לתיקוף</li><li class="ed" style="padding:5px 0;border-bottom:1px solid #ecf0f1;font-size:.9em">⚠️ התנגדות מורים לתיעוד פורמלי</li></ul>
+        <div style="font-weight:700;color:#27ae60;margin:10px 0 5px">הזדמנויות:</div>
+        <ul style="list-style:none;padding-right:10px"><li class="ed" style="padding:5px 0;border-bottom:1px solid #ecf0f1;font-size:.9em">✅ שימוש במשבצת ישיבות הצוות הקיימת, ללא צורך בשינוי מבנה השבוע</li></ul>
+      </div>
+    </div>
+    <div style="background:white;border-radius:14px;box-shadow:0 8px 25px rgba(0,0,0,.09);padding:22px;border-top:5px solid #e8b800">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:12px">
+        <div class="ed" style="font-size:1.05em;font-weight:700;color:#2c3e50;flex:1">ממשל לא מאויש ולוח זמנים צפוף</div>
+        <div class="ed" style="background:#e8b800;color:#2c3e50;padding:4px 12px;border-radius:20px;font-size:.75em;font-weight:700;white-space:nowrap">חומרה בינונית</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin:12px 0;text-align:center">
+        <div style="background:#f8f9fa;padding:10px;border-radius:8px"><div class="ed" style="font-size:1.5em;font-weight:700">6</div><div style="font-size:.78em;color:#7f8c8d">הסתברות</div></div>
+        <div style="background:#f8f9fa;padding:10px;border-radius:8px"><div class="ed" style="font-size:1.5em;font-weight:700">6</div><div style="font-size:.78em;color:#7f8c8d">עוצמת נזק</div></div>
+        <div style="background:#f8f9fa;padding:10px;border-radius:8px"><div class="ed" style="font-size:1.5em;font-weight:700">36</div><div style="font-size:.78em;color:#7f8c8d">דרגת חומרה</div></div>
+      </div>
+      <div class="ed" style="background:#f8f9fa;padding:12px;border-radius:8px;border-right:4px solid #bdc3c7;font-size:.93em;color:#34495e;line-height:1.6;margin-top:10px">אין ועדת היגוי מאוישת, נציג אסדרה ונציג לקוח; האלפא מתחילה בדצמבר כשבחירת בתי הספר וההיקף פתוחים, וקיימת תלות במנחה חיצונית (נגזר ממטרה 3: מודל בר-תיקוף ובר-הרחבה).</div>
+      <div class="ed" style="font-size:.8em;color:#555;background:#f0f4ff;padding:6px 11px;border-radius:7px;margin-top:8px;border-right:3px solid #3498db">📌 <strong>מקור:</strong> חוזר מנכ"ל לאסדרת חדשנות | מפת התמצאות לאסדרת חדשנות (ועדת הייחודיים)</div>
+      <div style="margin-top:12px">
+        <div style="font-weight:700;color:#e74c3c;margin-bottom:5px">השלכות:</div>
+        <ul style="list-style:none;padding-right:10px"><li class="ed" style="padding:5px 0;border-bottom:1px solid #ecf0f1;font-size:.9em">⚠️ החלטות מתעכבות והמלצות האסדרה ללא בעלים</li><li class="ed" style="padding:5px 0;border-bottom:1px solid #ecf0f1;font-size:.9em">⚠️ מודל שאינו בר-הרחבה</li></ul>
+        <div style="font-weight:700;color:#27ae60;margin:10px 0 5px">הזדמנויות:</div>
+        <ul style="list-style:none;padding-right:10px"><li class="ed" style="padding:5px 0;border-bottom:1px solid #ecf0f1;font-size:.9em">✅ תוכנית הדרגתית להעברת אחריות לרכז המקצוע</li></ul>
+      </div>
+    </div></div>
+      </div>
+    </section>
+
+    <section id="s3" style="scroll-margin-top:55px">
+      <div  style="background:linear-gradient(135deg,#e74c3c,#c0392b);color:white;padding:20px 35px;font-size:1.6em;font-weight:700;text-align:center" class="ed">📈 תוכנית התמודדות</div>
+      <div style="padding:28px;background:linear-gradient(135deg,#ecf0f1,#dfe6e9)">
+    <div style="background:white;border-radius:16px;box-shadow:0 10px 28px rgba(0,0,0,.08);overflow:hidden;margin-bottom:20px">
+      <div class="ed" style="background:linear-gradient(135deg,#27ae60,#2ecc71);color:white;padding:16px 22px;font-weight:700;font-size:1.05em">אסטרטגיה 1 — הסדרת מעמד השעות</div>
+      <div style="padding:20px 22px">
+        <p class="ed" style="color:#34495e;margin-bottom:14px">הכרעה כתובה במעמד השעות לפני התנעת האלפא, על בסיס הפרדה בין שלושה רכיבים.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px">
+          <div style="background:#f8f9fa;padding:12px;border-radius:10px;border-right:4px solid #27ae60">
+            <h5 class="ed" style="color:#27ae60;margin-bottom:4px;font-size:.92em">מתווה שלושה רכיבים</h5>
+            <p class="ed" style="font-size:.85em;color:#34495e">למידת צוות בתוך 4 שעות ישיבות הצוות; התנסות בכיתה כעבודה שוטפת; תיעוד ורפלקציה כרכיב הקרוב ל"עבודה רפלקטיבית".</p>
+            <span style="display:inline-block;background:#3498db;color:white;padding:2px 9px;border-radius:11px;font-size:.74em;margin-top:4px">עד סוף נובמבר</span>
+          </div><div style="background:#f8f9fa;padding:12px;border-radius:10px;border-right:4px solid #27ae60">
+            <h5 class="ed" style="color:#27ae60;margin-bottom:4px;font-size:.92em">חריגה כתובה ושקיפות</h5>
+            <p class="ed" style="font-size:.85em;color:#34495e">אישור כתוב מאגף א' (מוכרות, מותנות או לא מוכרות), שיתוף הסתדרות המורים והודעה כתובה למורים.</p>
+            <span style="display:inline-block;background:#3498db;color:white;padding:2px 9px;border-radius:11px;font-size:.74em;margin-top:4px">לפני דצמבר 2026</span>
+          </div><div style="background:#f8f9fa;padding:12px;border-radius:10px;border-right:4px solid #27ae60">
+            <h5 class="ed" style="color:#27ae60;margin-bottom:4px;font-size:.92em">מדד הצלחה</h5>
+            <p class="ed" style="font-size:.85em;color:#34495e">אישור כתוב מאגף א' והודעה כתובה לכל המשתתפים לפני התנעת האלפא.</p>
+            <span style="display:inline-block;background:#8e44ad;color:white;padding:2px 9px;border-radius:11px;font-size:.74em;margin-top:4px">KPI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background:white;border-radius:16px;box-shadow:0 10px 28px rgba(0,0,0,.08);overflow:hidden;margin-bottom:20px">
+      <div class="ed" style="background:linear-gradient(135deg,#27ae60,#2ecc71);color:white;padding:16px 22px;font-weight:700;font-size:1.05em">אסטרטגיה 2 — שימוש אחראי בבינה מלאכותית</div>
+      <div style="padding:20px 22px">
+        <p class="ed" style="color:#34495e;margin-bottom:14px">הגנה על מידע התלמידים ושמירה על שיקול הדעת המקצועי של המורים.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px">
+          <div style="background:#f8f9fa;padding:12px;border-radius:10px;border-right:4px solid #27ae60">
+            <h5 class="ed" style="color:#27ae60;margin-bottom:4px;font-size:.92em">נוהל התממה וכלים מאושרים</h5>
+            <p class="ed" style="font-size:.85em;color:#34495e">רשימה סגורה של כלים מאושרים ונוהל התממה חתום בידי כל משתתף, ובדיקת הצורך ביידוע הורים.</p>
+            <span style="display:inline-block;background:#3498db;color:white;padding:2px 9px;border-radius:11px;font-size:.74em;margin-top:4px">תנאי להתנעה</span>
+          </div><div style="background:#f8f9fa;padding:12px;border-radius:10px;border-right:4px solid #27ae60">
+            <h5 class="ed" style="color:#27ae60;margin-bottom:4px;font-size:.92em">המורה מכריע</h5>
+            <p class="ed" style="font-size:.85em;color:#34495e">כל פלט AI נבדק בצוות מול העדות המקורית, והדרכה קצרה למשתתפים.</p>
+            <span style="display:inline-block;background:#3498db;color:white;padding:2px 9px;border-radius:11px;font-size:.74em;margin-top:4px">לאורך האלפא</span>
+          </div><div style="background:#f8f9fa;padding:12px;border-radius:10px;border-right:4px solid #27ae60">
+            <h5 class="ed" style="color:#27ae60;margin-bottom:4px;font-size:.92em">מדד הצלחה</h5>
+            <p class="ed" style="font-size:.85em;color:#34495e">כל המשתתפים חתמו על הנוהל, ובבקרה מדגמית לא נמצא מידע מזוהה שהוזן לכלים.</p>
+            <span style="display:inline-block;background:#8e44ad;color:white;padding:2px 9px;border-radius:11px;font-size:.74em;margin-top:4px">KPI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background:white;border-radius:16px;box-shadow:0 10px 28px rgba(0,0,0,.08);overflow:hidden;margin-bottom:20px">
+      <div class="ed" style="background:linear-gradient(135deg,#27ae60,#2ecc71);color:white;padding:16px 22px;font-weight:700;font-size:1.05em">אסטרטגיה 3 — זמן מוגן, תיעוד וממשל</div>
+      <div style="padding:20px 22px">
+        <p class="ed" style="color:#34495e;margin-bottom:14px">שמירה על מחזורי הלמידה ובניית בסיס ראייתי לתיקוף ולהרחבה.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px">
+          <div style="background:#f8f9fa;padding:12px;border-radius:10px;border-right:4px solid #27ae60">
+            <h5 class="ed" style="color:#27ae60;margin-bottom:4px;font-size:.92em">זמן מוגן ותיעוד קל</h5>
+            <p class="ed" style="font-size:.85em;color:#34495e">התחייבות מנהל כתובה, שיבוץ קבוע במערכת ותקרת זמן לתיעוד בכל מחזור.</p>
+            <span style="display:inline-block;background:#3498db;color:white;padding:2px 9px;border-radius:11px;font-size:.74em;margin-top:4px">תנאי כניסה</span>
+          </div><div style="background:#f8f9fa;padding:12px;border-radius:10px;border-right:4px solid #27ae60">
+            <h5 class="ed" style="color:#27ae60;margin-bottom:4px;font-size:.92em">ועדת היגוי ונקודות הכרעה</h5>
+            <p class="ed" style="font-size:.85em;color:#34495e">איוש ועדה עם נציג אסדרה ונציג לקוח, סקירת סיכונים אחת לשלושה שבועות.</p>
+            <span style="display:inline-block;background:#3498db;color:white;padding:2px 9px;border-radius:11px;font-size:.74em;margin-top:4px">סוף נובמבר; פברואר–מרץ 2027</span>
+          </div><div style="background:#f8f9fa;padding:12px;border-radius:10px;border-right:4px solid #27ae60">
+            <h5 class="ed" style="color:#27ae60;margin-bottom:4px;font-size:.92em">מדד הצלחה</h5>
+            <p class="ed" style="font-size:.85em;color:#34495e">שיעור מפגשים שהתקיימו לפי השיבוץ, ומדד עצמאות צוותים מוגדר לקראת הביתא.</p>
+            <span style="display:inline-block;background:#8e44ad;color:white;padding:2px 9px;border-radius:11px;font-size:.74em;margin-top:4px">KPI</span>
+          </div>
+        </div>
+      </div>
+    </div></div>
+    </section>
+
+    <section id="s4" style="scroll-margin-top:55px">
+      <div  style="background:linear-gradient(135deg,#e74c3c,#c0392b);color:white;padding:20px 35px;font-size:1.6em;font-weight:700;text-align:center" class="ed">🚀 אסדרת חדשנות</div>
+      <div style="padding:28px;background:linear-gradient(135deg,#f8f9fa,#e9ecef)">
+        <div style="background:white;padding:22px;border-radius:14px;margin-bottom:16px;box-shadow:0 5px 16px rgba(0,0,0,.07)">
+          <h3 class="ed" style="color:#8e44ad;margin-bottom:10px">הגדרת רמת החדשנות — למידה מקצועית מתוך העבודה</h3>
+          <p class="ed" style="color:#34495e;line-height:1.8">החדשנות היא בהכרה בלמידה שמתקיימת מתוך הפרקטיקה, ולא בקורס בעל סילבוס, מרצה וגוף מבצע. המתווה תומך בכך: הוא מחייב לפחות 30 שעות פיתוח מקצועי בשנה, מזכיר קהילות בית-ספריות ומקצה עד 4 שעות שהייה לישיבות צוות. אולם תנאי ההכרה נכתבו לקורס, ולפי המקורות שנבדקו השתלמות מוכרת אינה יכולה לבוא על חשבון שעות שהייה. לכן ליבת האסדרה היא מעמד השעות, והיא דורשת את אגף א', את אגף כוח אדם בהוראה ואת ארגון המורים.</p>
+          <p class="ed" style="color:#34495e;line-height:1.8;margin-top:10px">עקרונות RRI: שלומות — תקרת זמן לתיעוד וזמן מוגן שאינו מוסיף עומס; שקיפות — הודעה כתובה למורים על מעמד הגמול; אחריותיות — ועדת היגוי מאוישת ובעלים לכל סיכון, והמורה מכריע מול פלט ה-AI; מידתיות — אלפא מוגבלת, נקודות הכרעה בסוף נובמבר ובפברואר–מרץ 2027.</p>
+        </div>
+        <div style="background:#f0f8ff;padding:18px;border-radius:12px;border-left:5px solid #3498db">
+          <h4 style="color:#34495e;margin-bottom:8px">🏛️ המלצת ועדת המשנה לאסדרת חדשנות</h4>
+          <p class="ed" style="color:#34495e;line-height:1.8">בהתאם לחוזר המנכ"ל לאסדרת חדשנות, מומלץ לאשר את הפרויקט כהתנסות מותנית, בכפוף לפחות לתנאים הבאים: (א) אישור כתוב מאגף א' על מעמד השעות בפיילוט; (ב) נוהל התממה ורשימת כלי AI מאושרים, חתומים בידי כל משתתף; (ה) הודעה כתובה למורים על מעמד הגמול. כמו כן נדרשים התחייבות מנהל לזמן מוגן, ועדת היגוי מאוישת עם נציג אסדרה ונציג לקוח, וסגירת היקף בתי הספר.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="s5" style="scroll-margin-top:55px">
+      <div  style="background:linear-gradient(135deg,#e74c3c,#c0392b);color:white;padding:20px 35px;font-size:1.6em;font-weight:700;text-align:center" class="ed">📊 רמת החדשנות</div>
+      <div style="background:linear-gradient(135deg,#8e44ad,#9b59b6);color:white;padding:35px;text-align:center">
+        <h2 class="ed" style="font-size:1.3em;margin-bottom:4px">ציון חדשנות כולל</h2>
+        <div class="ed" style="font-size:4.5em;font-weight:700;margin:16px 0;text-shadow:2px 2px 5px rgba(0,0,0,.3)">6.25</div>
+        <div class="ed" style="font-size:1.1em;opacity:.9;margin-top:-10px;margin-bottom:12px">/ 10 — חדשנות בינונית-גבוהה, ארגונית-פדגוגית</div>
+        <p class="ed" style="opacity:.85;max-width:600px;margin:0 auto 20px">השינוי הארגוני וההשפעה הפדגוגית מעלים את הציון. הרכיב הטכנולוגי מתון ומבוסס על כלים קיימים, בכפוף לנוהל התממה.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px">
+          <div style="background:rgba(255,255,255,.14);padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,.2)"><div class="ed" style="font-size:2em;font-weight:700;color:#f39c12;margin-bottom:4px">8</div><div class="ed" style="font-weight:700;margin-bottom:4px">השפעה פדגוגית</div><p class="ed" style="opacity:.85;font-size:.86em">למידה מקצועית מתוך הכיתה, המבוססת על עדויות למידה של תלמידים.</p></div><div style="background:rgba(255,255,255,.14);padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,.2)"><div class="ed" style="font-size:2em;font-weight:700;color:#f39c12;margin-bottom:4px">4</div><div class="ed" style="font-weight:700;margin-bottom:4px">מורכבות טכנולוגית</div><p class="ed" style="opacity:.85;font-size:.86em">שימוש בכלי AI קיימים לניתוח עדויות, ללא פיתוח טכנולוגי.</p></div><div style="background:rgba(255,255,255,.14);padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,.2)"><div class="ed" style="font-size:2em;font-weight:700;color:#f39c12;margin-bottom:4px">8</div><div class="ed" style="font-weight:700;margin-bottom:4px">שינוי ארגוני</div><p class="ed" style="opacity:.85;font-size:.86em">הכרה בלמידה בשעות העבודה, הנוגעת להסכם הקיבוצי ולכמה אגפים.</p></div><div style="background:rgba(255,255,255,.14);padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,.2)"><div class="ed" style="font-size:2em;font-weight:700;color:#f39c12;margin-bottom:4px">5</div><div class="ed" style="font-weight:700;margin-bottom:4px">סיכון טכנולוגי</div><p class="ed" style="opacity:.85;font-size:.86em">מידע של תלמידים בכלי AI והסתמכות יתר על הפלט; ניתן לניהול בנוהל התממה.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="s6" style="scroll-margin-top:55px">
+      <div  style="background:linear-gradient(135deg,#e74c3c,#c0392b);color:white;padding:20px 35px;font-size:1.6em;font-weight:700;text-align:center" class="ed">✅ התאמה לדרישות אסדרה</div>
+      <div style="padding:28px;background:#ecf0f1">
+        <table style="width:100%;background:white;border-radius:14px;overflow:hidden;box-shadow:0 5px 16px rgba(0,0,0,.07);border-collapse:collapse">
+          <thead><tr style="background:#34495e;color:white"><th style="padding:13px 16px;text-align:right;font-weight:700">דרישת אסדרה</th><th style="padding:13px 16px;text-align:right;font-weight:700">סטטוס</th><th style="padding:13px 16px;text-align:right;font-weight:700">פעולה נדרשת</th></tr></thead>
+          <tbody><tr style="border-bottom:1px solid #ecf0f1"><td class="ed" style="padding:13px 16px;vertical-align:top"><strong>גמול השתלמות ושעות שהייה (אופק חדש)</strong><br><small style="color:#7f8c8d">השתלמות מוכרת אינה על חשבון שעות שהייה; הסעיף בהסכם עצמו טרם אותר.</small></td><td style="padding:13px 16px;vertical-align:top"><span style="background:#e74c3c;color:white;padding:3px 10px;border-radius:10px;font-size:.82em;font-weight:700;display:inline-block">דורש שיפור</span></td><td class="ed" style="padding:13px 16px;vertical-align:top">חריגה כתובה ומתוחמת לפיילוט מאגף א', בשיתוף הסתדרות המורים, לפני דצמבר 2026.</td></tr><tr style="border-bottom:1px solid #ecf0f1"><td class="ed" style="padding:13px 16px;vertical-align:top"><strong>תנאי ההכרה בנוהל הפיתוח המקצועי</strong><br><small style="color:#7f8c8d">80% נוכחות, עבודה רפלקטיבית עם ציון וקורס שהוכר באגף א'.</small></td><td style="padding:13px 16px;vertical-align:top"><span style="background:#f39c12;color:white;padding:3px 10px;border-radius:10px;font-size:.82em;font-weight:700;display:inline-block">עמידה חלקית</span></td><td class="ed" style="padding:13px 16px;vertical-align:top">התאמה למחזורי למידה; תבנית התיעוד כעבודה רפלקטיבית וכראיית שעות. לוודא מול הנוהל התקף לתשפ"ז.</td></tr><tr style="border-bottom:1px solid #ecf0f1"><td class="ed" style="padding:13px 16px;vertical-align:top"><strong>היקף שנתי של 30 שעות</strong><br><small style="color:#7f8c8d">המתווה מחייב לפחות 30 שעות פיתוח מקצועי בשנה.</small></td><td style="padding:13px 16px;vertical-align:top"><span style="background:#27ae60;color:white;padding:3px 10px;border-radius:10px;font-size:.82em;font-weight:700;display:inline-block">עמידה מלאה</span></td><td class="ed" style="padding:13px 16px;vertical-align:top">אין פעולה נדרשת; היקף הפרויקט תואם יחידת גמול קיימת.</td></tr><tr style="border-bottom:1px solid #ecf0f1"><td class="ed" style="padding:13px 16px;vertical-align:top"><strong>משבצת ישיבות צוות</strong><br><small style="color:#7f8c8d">עד 4 מתוך 9 שעות שהייה בחטיבת הביניים לישיבות צוות מקצועי.</small></td><td style="padding:13px 16px;vertical-align:top"><span style="background:#27ae60;color:white;padding:3px 10px;border-radius:10px;font-size:.82em;font-weight:700;display:inline-block">עמידה מלאה</span></td><td class="ed" style="padding:13px 16px;vertical-align:top">שיבוץ למידת הצוות בתוך המשבצת הקיימת, בהתחייבות מנהל.</td></tr><tr style="border-bottom:1px solid #ecf0f1"><td class="ed" style="padding:13px 16px;vertical-align:top"><strong>הנחיות שימוש בכלי בינה מלאכותית (2026)</strong><br><small style="color:#7f8c8d">כלים מאושרים בלבד; איסור מסירת מידע מזוהה של תלמידים, מורים ובית הספר.</small></td><td style="padding:13px 16px;vertical-align:top"><span style="background:#f39c12;color:white;padding:3px 10px;border-radius:10px;font-size:.82em;font-weight:700;display:inline-block">עמידה חלקית</span></td><td class="ed" style="padding:13px 16px;vertical-align:top">נוהל התממה, רשימה סגורה של כלים ובדיקת הצורך ביידוע הורים.</td></tr><tr style="border-bottom:1px solid #ecf0f1"><td class="ed" style="padding:13px 16px;vertical-align:top"><strong>גורם מאשר לחריגה (ועדת הייחודיים)</strong><br><small style="color:#7f8c8d">מוזכרת במפת ההתמצאות; לא אומת שסמכותה חלה על כללי הגמול.</small></td><td style="padding:13px 16px;vertical-align:top"><span style="background:#3498db;color:white;padding:3px 10px;border-radius:10px;font-size:.82em;font-weight:700;display:inline-block">בפיתוח</span></td><td class="ed" style="padding:13px 16px;vertical-align:top">בירור הגורם המוסמך ומינוי בעל סמכות מאגף א' עד סוף אוקטובר.</td></tr></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="s7" style="scroll-margin-top:55px">
+      <div  style="background:linear-gradient(135deg,#e74c3c,#c0392b);color:white;padding:20px 35px;font-size:1.6em;font-weight:700;text-align:center" class="ed">📝 סיכום מנהלים והמלצות</div>
+      <div style="padding:28px;background:linear-gradient(135deg,#2c3e50,#34495e);color:white">
+        <h2 class="ed" style="text-align:center;color:#f39c12;margin-bottom:16px">סיכום ביצועי</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-bottom:18px">
+          <div style="background:rgba(255,255,255,.1);padding:15px;border-radius:12px;border:1px solid rgba(255,255,255,.14)"><h4 style="color:#f39c12;margin-bottom:6px;font-size:.92em">📊 רמת חדשנות</h4><p class="ed" style="font-size:.9em">6.25/10 — הכרה בלמידה מתוך העבודה, עם רכיב טכנולוגי מתון</p></div><div style="background:rgba(255,255,255,.1);padding:15px;border-radius:12px;border:1px solid rgba(255,255,255,.14)"><h4 style="color:#f39c12;margin-bottom:6px;font-size:.92em">🔐 הסיכון הגדול</h4><p class="ed" style="font-size:.9em">הכרה לגמול בלמידה המתקיימת בשעות שהייה — ציון 81 — פתרון: חריגה כתובה מאגף א' לפני האלפא</p></div><div style="background:rgba(255,255,255,.1);padding:15px;border-radius:12px;border:1px solid rgba(255,255,255,.14)"><h4 style="color:#f39c12;margin-bottom:6px;font-size:.92em">⚠️ רמת סיכון כוללת</h4><p class="ed" style="font-size:.9em">1 בחומרה גבוהה מאוד, 2 גבוהים, 2 בינוניים — ניתנים למיתון בתנאי סף לפני דצמבר 2026</p></div>
+        </div>
+        <div style="background:rgba(255,255,255,.07);padding:18px;border-radius:12px">
+          <h3 style="color:#f39c12;margin-bottom:12px">💡 המלצות מרכזיות</h3>
+          <div class="ed" style="background:rgba(255,255,255,.07);margin:9px 0;padding:12px;border-radius:9px;border-right:4px solid #f39c12;font-size:.91em"><strong>1. למטרה: למידה ביום העבודה</strong><br>להתנות את הכניסה בהתחייבות מנהל לזמן מוגן בתוך משבצת ישיבות הצוות, ובנוהל התממה חתום לשימוש ב-AI.</div><div class="ed" style="background:rgba(255,255,255,.07);margin:9px 0;padding:12px;border-radius:9px;border-right:4px solid #f39c12;font-size:.91em"><strong>2. למטרה: הכרה לגמול</strong><br>לקבל עד סוף נובמבר אישור כתוב מאגף א' על מעמד השעות, לשתף את הסתדרות המורים ולהודיע למורים בכתב לפני ההתנעה.</div><div class="ed" style="background:rgba(255,255,255,.07);margin:9px 0;padding:12px;border-radius:9px;border-right:4px solid #f39c12;font-size:.91em"><strong>3. למטרה: מודל בר-הרחבה</strong><br>לאייש ועדת היגוי עם נציג אסדרה ונציג לקוח, לקבוע ספי הצלחה מספריים ומדד עצמאות לביתא.</div>
+        </div>
+        <p class="ed" style="text-align:center;margin-top:16px;opacity:.7;font-size:.88em">צעדים מיידיים: (1) מינוי בעל סמכות מאגף א' ואיוש ועדת ההיגוי — סוף אוקטובר | (2) נוהל התממה וכלים מאושרים | (3) נקודת הכרעה — סוף נובמבר 2026</p>
+      </div>
+    </section>
+
+    <section id="s8" style="scroll-margin-top:55px">
+      <div style="background:linear-gradient(135deg,#16a085,#1abc9c);color:white;padding:20px 35px;font-size:1.6em;font-weight:700;text-align:center">📚 מקורות ידע</div>
+      <div style="background:linear-gradient(135deg,#1a252f,#2c3e50);padding:32px;color:white">
+        
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px"><div style="background:rgba(255,255,255,.08);border-radius:12px;padding:18px;border:1px solid rgba(255,255,255,.14)"><div style="font-size:.93em;font-weight:700;color:#1abc9c;margin-bottom:11px;padding-bottom:7px;border-bottom:2px solid rgba(26,188,156,.3)">🏛️ חוקי חינוך</div><div style="margin:5px 0;padding:6px 10px;background:rgba(255,255,255,.06);border-radius:6px;border-right:3px solid #1abc9c"><a href="https://www.google.com/url?q=https://apps.education.gov.il/Mankal/Horaa.aspx?siduri%3D480&sa=D&source=docs&ust=1780673455407346&usg=AOvVaw0bGl6jmiEYR6HV7YlVDF7z" target="_blank" rel="noopener" style="color:#abebc6;text-decoration:none;font-size:.85em">📌 חוזר מנכ"ל לאסדרת חדשנות</a></div><div style="margin:5px 0;padding:6px 10px;background:rgba(255,255,255,.06);border-radius:6px;border-right:3px solid #1abc9c"><a href="https://he.wikisource.org/wiki/%D7%97%D7%95%D7%A7_%D7%9C%D7%99%D7%9E%D7%95%D7%93_%D7%97%D7%95%D7%91%D7%94" target="_blank" rel="noopener" style="color:#abebc6;text-decoration:none;font-size:.85em">⚖️ חוק לימוד חובה, תש"ט–1949</a></div><div style="margin:5px 0;padding:6px 10px;background:rgba(255,255,255,.06);border-radius:6px;border-right:3px solid #1abc9c"><a href="https://www.gov.il/he/pages/mankal_edu" target="_blank" rel="noopener" style="color:#abebc6;text-decoration:none;font-size:.85em">📂 מאגר חוזרי מנכ"ל</a></div><div style="margin:5px 0;padding:6px 10px;background:rgba(255,255,255,.06);border-radius:6px;border-right:3px solid #1abc9c"><a href="https://www.nevo.co.il/law_html/law00/71978.htm" target="_blank" rel="noopener" style="color:#abebc6;text-decoration:none;font-size:.85em">⚖️ חוק חינוך ממלכתי</a></div><div style="margin:5px 0;padding:6px 10px;background:rgba(255,255,255,.06);border-radius:6px;border-right:3px solid #1abc9c"><a href="https://www.gov.il/he/pages/edu-law" target="_blank" rel="noopener" style="color:#abebc6;text-decoration:none;font-size:.85em">📋 חוקי חינוך במשרד החינוך</a></div><div style="margin:5px 0;padding:6px 10px;background:rgba(255,255,255,.06);border-radius:6px;border-right:3px solid #1abc9c"><a href="https://pop.education.gov.il/tchumey_daat/hinuch-hevrati/pedagogy/curriculum/" target="_blank" rel="noopener" style="color:#abebc6;text-decoration:none;font-size:.85em">📖 תוכנית ליבה לשעת חינוך</a></div></div><div style="background:rgba(255,255,255,.08);border-radius:12px;padding:18px;border:1px solid rgba(255,255,255,.14)"><div style="font-size:.93em;font-weight:700;color:#1abc9c;margin-bottom:11px;padding-bottom:7px;border-bottom:2px solid rgba(26,188,156,.3)">🤖 חדשנות אחראית ובינה מלאכותית</div><div style="margin:5px 0;padding:6px 10px;background:rgba(255,255,255,.06);border-radius:6px;border-right:3px solid #1abc9c"><a href="https://meyda.education.gov.il/files/Pop/0files/lemida-metukshevet/AI/Guidelines.pdf" target="_blank" rel="noopener" style="color:#abebc6;text-decoration:none;font-size:.85em">🧠 חדשנות אחראית ושימוש בכלי בינה מלאכותית בחינוך (2025)</a></div><div style="margin:5px 0;padding:6px 10px;background:rgba(255,255,255,.06);border-radius:6px;border-right:3px solid #7f8c8d"><span style="color:#abebc6;font-size:.85em;opacity:.75">🗺️ מפת התמצאות לאסדרת חדשנות</span></div></div><div style="background:rgba(255,255,255,.08);border-radius:12px;padding:18px;border:1px solid rgba(255,255,255,.14)"><div style="font-size:.93em;font-weight:700;color:#1abc9c;margin-bottom:11px;padding-bottom:7px;border-bottom:2px solid rgba(26,188,156,.3)">📊 תכנון ובקרה</div><div style="margin:5px 0;padding:6px 10px;background:rgba(255,255,255,.06);border-radius:6px;border-right:3px solid #1abc9c"><a href="https://harhayeda.gov.il/media/4wqogjpb/20241208-tasc-di-cio-methodology-for-publishing-v01.pdf" target="_blank" rel="noopener" style="color:#abebc6;text-decoration:none;font-size:.85em">📄 מדריך לתכנון ובקרה</a></div></div><div style="background:rgba(255,255,255,.08);border-radius:12px;padding:18px;border:1px solid rgba(255,255,255,.14)"><div style="font-size:.93em;font-weight:700;color:#1abc9c;margin-bottom:11px;padding-bottom:7px;border-bottom:2px solid rgba(26,188,156,.3)">💰 שכר המורים</div><div style="margin:5px 0;padding:6px 10px;background:rgba(255,255,255,.06);border-radius:6px;border-right:3px solid #1abc9c"><a href="https://www.igm.org.il/site/pg/igm_item_side_info,174430" target="_blank" rel="noopener" style="color:#abebc6;text-decoration:none;font-size:.85em">📝 עוז לתמורה (ארגון המורים)</a></div><div style="margin:5px 0;padding:6px 10px;background:rgba(255,255,255,.06);border-radius:6px;border-right:3px solid #1abc9c"><a href="https://www.itu.org.il/%D7%9C%D7%95%D7%91%D7%99-%D7%AA%D7%A0%D7%90%D7%99-%D7%A2%D7%91%D7%95%D7%93%D7%94/%D7%94%D7%A1%D7%9B%D7%9D-%D7%A7%D7%99%D7%91%D7%95%D7%A6%D7%99-2022/" target="_blank" rel="noopener" style="color:#abebc6;text-decoration:none;font-size:.85em">📝 אופק חדש (הסתדרות המורים)</a></div></div><div style="background:rgba(255,255,255,.08);border-radius:12px;padding:18px;border:1px solid rgba(255,255,255,.14)"><div style="font-size:.93em;font-weight:700;color:#1abc9c;margin-bottom:11px;padding-bottom:7px;border-bottom:2px solid rgba(26,188,156,.3)">📅 ארגון לימודים ופיתוח מקצועי</div><div style="margin:5px 0;padding:6px 10px;background:rgba(255,255,255,.06);border-radius:6px;border-right:3px solid #1abc9c"><a href="https://meyda.education.gov.il/files/MinhalPedagogy/agaf-kishrey/irgun-elyona.pdf" target="_blank" rel="noopener" style="color:#abebc6;text-decoration:none;font-size:.85em">🗓️ ארגון הלמידה בחטיבה העליונה תשפ"ו</a></div><div style="margin:5px 0;padding:6px 10px;background:rgba(255,255,255,.06);border-radius:6px;border-right:3px solid #1abc9c"><a href="https://pop.education.gov.il/headquarters-civil-education-coexistence/professional-development/" target="_blank" rel="noopener" style="color:#abebc6;text-decoration:none;font-size:.85em">🎓 פיתוח מקצועי – פורטל עובדי הוראה</a></div><div style="margin:5px 0;padding:6px 10px;background:rgba(255,255,255,.06);border-radius:6px;border-right:3px solid #1abc9c"><a href="https://www.itu.org.il/%D7%9C%D7%95%D7%91%D7%99-%D7%AA%D7%A0%D7%90%D7%99-%D7%A2%D7%91%D7%95%D7%93%D7%94/%D7%94%D7%AA%D7%A4%D7%AA%D7%97%D7%95%D7%AA-%D7%9E%D7%A7%D7%A6%D7%95%D7%A2%D7%99%D7%AA/" target="_blank" rel="noopener" style="color:#abebc6;text-decoration:none;font-size:.85em">🏫 הנחיות הסתדרות המורים</a></div><div style="margin:5px 0;padding:6px 10px;background:rgba(255,255,255,.06);border-radius:6px;border-right:3px solid #1abc9c"><a href="https://pop.education.gov.il/tchumey_daat/safrut/chativat-beynayim/pedagogia-safrut/digital-books/" target="_blank" rel="noopener" style="color:#abebc6;text-decoration:none;font-size:.85em">📚 מאגר ספרי לימוד מאושרים</a></div></div></div>
+        <div style="margin-top:18px;background:rgba(26,188,156,.1);border:1px solid rgba(26,188,156,.25);border-radius:10px;padding:13px;font-size:.83em;color:rgba(255,255,255,.8)">
+          <strong style="color:#1abc9c">📌 הערת שימוש:</strong> המקורות עשויים להשתנות מעת לעת. לבדיקת עדכוני מדיניות:
+          <a href="https://edu.gov.il" target="_blank" style="color:#1abc9c">edu.gov.il</a>
+        </div>
+      </div>
+    </section>
+
+    <div style="background:#1a252f;color:#7f8c8d;text-align:center;padding:22px;font-size:.88em">
+      <p class="ed">דוח ניהול סיכונים — למידה מקצועית במתמטיקה OJT (תשפ"ז) | משרד החינוך | אוקטובר 2026</p>
+      <p style="margin-top:5px;opacity:.8">מבוסס על: נוהל פיתוח מקצועי באופק חדש | אופק חדש | הנחיות שימוש בכלי AI (2026) | חוזר מנכ"ל לאסדרת חדשנות | עקרונות RRI</p>
+      <p style="margin-top:10px"><strong style="color:#3498db">פיתוח ועיצוב: ד"ר אסף אוזן</strong></p>
+    </div></div></div></body></html>
